@@ -8,7 +8,7 @@ export const portfolioProjects = [
     image: {
       gradient: "from-cyan-500 to-blue-600",
       label: "",
-      thumbnail: "project-images/RAG-ON-AWS.svg",
+      thumbnail: "project-thumbnail/RAG-ON-AWS.svg",
     },
     summary:
       "An enterprise-grade RAG platform on AWS where documents uploaded to S3 are embedded via Bedrock, stored in RDS with Lambda, and queried seamlessly through a Streamlit app hosted on EC2.",
@@ -24,7 +24,7 @@ export const portfolioProjects = [
     image: {
       gradient: "from-yellow-500 to-amber-600",
       label: "",
-      thumbnail: "project-images/Mini-HuggingFace.svg",
+      thumbnail: "project-thumbnail/Mini-HuggingFace.svg",
     },
     summary:
       "Mini Hugging Face–style fine-tuning service powered by AWS, combining S3, Lambda, EventBridge, and SageMaker for automated training and endpoint deployment, with a simple Streamlit interface hosted on EC2 for users.",
@@ -40,7 +40,7 @@ export const portfolioProjects = [
     image: {
       gradient: "",
       label: "",
-      thumbnail: "project-images/VoiceBot.svg",
+      thumbnail: "project-thumbnail/VoiceBot.svg",
     },
     summary:
       "A stateless microservice architecture that processes text through an LLM service and streams the generated response to a TTS service for real-time audio output. The system delivers ultra-low latency with a 17 ms TTFT and 50+ tokens/sec throughput. Deployed on AWS, it scales horizontally and supports seamless multi-user interactions.",
@@ -57,7 +57,7 @@ export const portfolioProjects = [
     image: {
       gradient: "from-red-500 to-rose-600",
       label: "",
-      thumbnail: "project-images/AI-Research-Assistance.svg",
+      thumbnail: "project-thumbnail/AI-Research-Assistance.svg",
     },
     summary:
       "AI Research Assistant that leverages OpenAI function calling with Supabase to combine RAG, web search, analytics, and charting into one powerful multi-tool for intelligent research.",
@@ -75,7 +75,7 @@ export const portfolioProjects = [
       gradient: "from-gray-700 to-gray-900",
       label: "",
       // Add thumbnail
-      thumbnail: "project-images/MM-Finetuning.svg",
+      thumbnail: "project-thumbnail/MM-Finetuning.svg",
     },
     summary:
       "Finetuned a Multimodel LLM LLAMA-VISION to diagnose the XRAY images and give response as a radiologist.",
@@ -90,7 +90,7 @@ export const portfolioProjects = [
     image: {
       gradient: "",
       label: "",
-      thumbnail: "project-images/retina.svg",
+      thumbnail: "project-thumbnail/retina.svg",
     },
     summary:
       "A deep learning solution built with U-Net in PyTorch to accurately segment blood vessels in retinal images, aiding in early diagnosis of eye diseases.",
@@ -105,7 +105,7 @@ export const portfolioProjects = [
     image: {
       gradient: "",
       label: "",
-      thumbnail: "project-images/Finetuned-Chatdataset.svg",
+      thumbnail: "project-thumbnail/Finetuned-Chatdataset.svg",
     },
     summary:
       "A custom finetuned model optimized on chat data to improve response quality, contextual relevance, and user interaction in conversational AI applications.",
@@ -121,7 +121,7 @@ export const portfolioProjects = [
     image: {
       gradient: "",
       label: "",
-      thumbnail: "project-images/amot.svg",
+      thumbnail: "project-thumbnail/amot.svg",
     },
     summary:
       "A secure, enterprise-grade ChatGPT solution deployed via Azure App Service—designed for internal use cases like knowledge retrieval, chat history, user authentication and user feedback.",
