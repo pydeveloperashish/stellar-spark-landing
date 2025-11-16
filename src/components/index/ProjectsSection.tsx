@@ -1,5 +1,6 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, Suspense } from "react";
 import { ProjectCard } from "./ProjectCard";
+import { ProjectSkeleton } from "./ProjectSkeleton";
 import { portfolioProjects } from "@/data/portfolioProjects";
 import { motion } from "framer-motion";
 import {
@@ -98,7 +99,9 @@ const ProjectsSection = () => {
                           viewport={{ once: true }}
                           transition={{ duration: 0.6, delay: projectIndex * 0.1 }}
                         >
-                          <ProjectCard {...project} />
+                          <Suspense fallback={<ProjectSkeleton />}>
+                            <ProjectCard {...project} />
+                          </Suspense>
                         </motion.div>
                       ))}
                     </div>
