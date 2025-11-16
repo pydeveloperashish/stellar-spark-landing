@@ -14,21 +14,24 @@ import { motion } from "framer-motion";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 
 interface ProjectProps {
-  id: number;
+  id: string;
   title: string;
   description: string;
-  content: string;
-  icon: string;
-  thumbnailUrl?: string; // Optional prop for custom thumbnail
-  videoUrl?: string; // Optional prop for custom video URL
+  image: {
+    gradient: string;
+    label: string;
+    thumbnail: string;
+  };
+  summary: string;
+  tags: string[];
+  link: string;
+  loom: string;
 }
 
-export const ProjectCard = ({ id, title, description, content, icon, thumbnailUrl, videoUrl }: ProjectProps) => {
+export const ProjectCard = ({ id, title, description, image, summary, tags, link, loom }: ProjectProps) => {
   const [isHovering, setIsHovering] = useState(false);
-  // Use custom video URL if provided, otherwise use the default
-  const finalVideoUrl = videoUrl || "https://youtube.com/live/O5_--oZPbgQ";
-  // Use custom thumbnail if provided, otherwise use the default
-  const thumbnail = thumbnailUrl || "https://img.youtube.com/vi/O5_--oZPbgQ/maxresdefault.jpg";
+  const finalVideoUrl = loom;
+  const thumbnail = `/${image.thumbnail}` || "/placeholder.svg";
 
   return (
     <Card 
@@ -87,7 +90,16 @@ export const ProjectCard = ({ id, title, description, content, icon, thumbnailUr
         </CardDescription>
       </CardHeader>
       <CardContent className="text-gray-400 text-sm flex-grow">
-        <p className="leading-relaxed line-clamp-3">{content}</p>
+        <p className="leading-relaxed line-clamp-3">{summary}</p>
+        
+        {/* Tags */}
+        <div className="flex flex-wrap gap-2 mt-3">
+          {tags.map((tag, index) => (
+            <span key={index} className="px-2 py-1 text-xs bg-purple-500/10 text-purple-300 rounded-md border border-purple-500/20">
+              {tag}
+            </span>
+          ))}
+        </div>
         
         {/* Gradient line that animates on hover */}
         <div className="mt-4 h-0.5 w-0 group-hover:w-full bg-gradient-to-r from-purple-500/60 to-blue-500/60 transition-all duration-700 rounded-full"></div>
