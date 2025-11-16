@@ -39,7 +39,7 @@ export const ProjectCard = ({ id, title, description, image, summary, tags, link
     >
       <CardHeader className="pb-2">
         <div 
-          className="h-56 -mt-6 -mx-6 mb-4 relative overflow-hidden rounded-2xl group-hover:from-purple-800/30 group-hover:to-blue-800/30 transition-all duration-500"
+          className="h-72 -mt-6 -mx-6 mb-4 relative overflow-hidden rounded-2xl group-hover:from-purple-800/30 group-hover:to-blue-800/30 transition-all duration-500"
           onMouseEnter={() => setIsHovering(true)}
           onMouseLeave={() => setIsHovering(false)}
         >
