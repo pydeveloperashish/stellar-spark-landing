@@ -6,8 +6,7 @@ export const portfolioProjects = [
     title: "Enterprise RAG on top of AWS",
     description: "A fully automated enterprise RAG pipeline on AWS — upload, embed, store, and query documents with S3, Bedrock, Lambda, RDS and EC2.",
     image: {
-      gradient: "from-cyan-500 to-blue-600",
-      label: "",
+      gradient: "linear-gradient(135deg, #06b6d4, #2563eb)",
       thumbnail: "project-thumbnail/RAG-ON-AWS.svg",
     },
     summary:
@@ -22,8 +21,7 @@ export const portfolioProjects = [
     title: "Mini Hugging Face - Finetuning Platform as a Service",
     description: "A Finetuning Platform as a Service to finetune LLMs on your own data.",
     image: {
-      gradient: "from-yellow-500 to-amber-600",
-      label: "",
+      gradient: "linear-gradient(135deg, #eab308, #d97706)",
       thumbnail: "project-thumbnail/Mini-HuggingFace.svg",
     },
     summary:
@@ -38,8 +36,7 @@ export const portfolioProjects = [
     title: "Real-Time AI Voice Assistant for Healthcare on top of AWS",
     description: "An intelligent voice agent that lets patients talk to healthcare systems in real time.",
     image: {
-      gradient: "",
-      label: "",
+      gradient: "linear-gradient(135deg, #8b5cf6, #3b82f6)",
       thumbnail: "project-thumbnail/VoiceBot.svg",
     },
     summary:
@@ -55,8 +52,7 @@ export const portfolioProjects = [
     title: "Smart AI Research Assistant",
     description: "Smart AI research assistant powered by OpenAI multi-tool function calling and Supabase.",
     image: {
-      gradient: "from-red-500 to-rose-600",
-      label: "",
+      gradient: "linear-gradient(135deg, #ef4444, #f43f5e)",
       thumbnail: "project-thumbnail/AI-Research-Assistance.svg",
     },
     summary:
@@ -72,8 +68,7 @@ export const portfolioProjects = [
     title: "Radiology Multimodel Finetuning",
     description: "AI tool for analyzing radiology images and generating instant medical insights.",
     image: {
-      gradient: "from-gray-700 to-gray-900",
-      label: "",
+      gradient: "linear-gradient(135deg, #374151, #111827)",
       // Add thumbnail
       thumbnail: "project-thumbnail/MM-Finetuning.svg",
     },
@@ -88,8 +83,7 @@ export const portfolioProjects = [
     title: "Retina Blood Vessel Segmentation",
     description: "Retina Blood Vessel Segmentation Using UNET In Pytorch",
     image: {
-      gradient: "",
-      label: "",
+      gradient: "linear-gradient(135deg, #10b981, #059669)",
       thumbnail: "project-thumbnail/retina.svg",
     },
     summary:
@@ -103,8 +97,7 @@ export const portfolioProjects = [
     title: "Finetune LLM on Chat Dataset",
     description: "Finetuned language model trained on chat-based dataset for better conversational understanding.",
     image: {
-      gradient: "",
-      label: "",
+      gradient: "linear-gradient(135deg, #f59e0b, #ea580c)",
       thumbnail: "project-thumbnail/Finetuned-Chatdataset.svg",
     },
     summary:
@@ -119,8 +112,7 @@ export const portfolioProjects = [
     title: "RAG Based ChatGPT For Enterprises built on top of Azure",
     description: "ChatGPT For Enterprises for internal usecases using RAG built on top of Azure.",
     image: {
-      gradient: "",
-      label: "",
+      gradient: "linear-gradient(135deg, #0ea5e9, #0284c7)",
       thumbnail: "project-thumbnail/amot.svg",
     },
     summary:
