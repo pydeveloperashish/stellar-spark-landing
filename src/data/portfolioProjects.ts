@@ -1,7 +1,7 @@
 
 export const portfolioProjects = [
   
-   {
+  {
     id: "p1",
     title: "Enterprise RAG on top of AWS",
     description: "A fully automated enterprise RAG pipeline on AWS — upload, embed, store, and query documents with S3, Bedrock, Lambda, RDS and EC2.",
