@@ -39,50 +39,56 @@ export const ProjectCard = ({ id, title, description, image, summary, tags, link
     >
       <CardHeader className="pb-2">
         <div 
-          className="h-56 -mt-6 -mx-6 mb-4 relative overflow-hidden rounded-2xl group-hover:from-purple-800/30 group-hover:to-blue-800/30 transition-all duration-500"
+          className="h-56 -mt-6 -mx-6 mb-4 relative overflow-hidden rounded-2xl transition-all duration-500"
           onMouseEnter={() => setIsHovering(true)}
           onMouseLeave={() => setIsHovering(false)}
         >
-          {/* Video thumbnail with hover effect */}
-          <a href={finalVideoUrl} target="_blank" rel="noopener noreferrer" className="block w-full h-full cursor-pointer">
-            <AspectRatio ratio={16/9} className="w-full h-full">
-              <motion.div 
-                className="absolute inset-0 w-full h-full bg-black/30 flex items-center justify-center z-10"
-                animate={{ 
-                  opacity: isHovering ? 1 : 0.7,
-                }}
-                transition={{ duration: 0.3 }}
-              >
-                <motion.div
-                  className="rounded-full bg-purple-500/80 p-2.5 backdrop-blur-sm"
+          {/* Gradient border wrapper */}
+          <div 
+            className="absolute inset-0 p-3 rounded-2xl"
+            style={{ background: image.gradient }}
+          >
+            {/* Video thumbnail with hover effect */}
+            <a href={finalVideoUrl} target="_blank" rel="noopener noreferrer" className="block w-full h-full cursor-pointer rounded-lg overflow-hidden">
+              <AspectRatio ratio={16/9} className="w-full h-full bg-slate-900">
+                <motion.div 
+                  className="absolute inset-0 w-full h-full bg-black/30 flex items-center justify-center z-10"
                   animate={{ 
-                    scale: isHovering ? 1.1 : 1,
+                    opacity: isHovering ? 1 : 0.7,
                   }}
-                  transition={{ 
-                    duration: 0.5,
-                    type: "spring",
-                    stiffness: 300,
-                  }}
+                  transition={{ duration: 0.3 }}
                 >
-                  <Play className="h-6 w-6 text-white" />
+                  <motion.div
+                    className="rounded-full bg-purple-500/80 p-2.5 backdrop-blur-sm"
+                    animate={{ 
+                      scale: isHovering ? 1.1 : 1,
+                    }}
+                    transition={{ 
+                      duration: 0.5,
+                      type: "spring",
+                      stiffness: 300,
+                    }}
+                  >
+                    <Play className="h-6 w-6 text-white" />
+                  </motion.div>
                 </motion.div>
-              </motion.div>
-              
-              {/* Thumbnail image */}
-              <motion.img
-                src={thumbnail}
-                alt={`${title} thumbnail`}
-                className="object-cover w-full h-full"
-                animate={{ 
-                  scale: isHovering ? 1.05 : 1,
-                }}
-                transition={{ duration: 0.5 }}
-              />
-              
-              {/* Light beam effect on hover */}
-              <div className="absolute -inset-full h-[500%] w-[25%] bg-gradient-to-r from-transparent via-white/20 to-transparent -skew-x-12 transform-gpu hidden group-hover:block group-hover:animate-[shimmer_3s_ease-in-out_infinite]"></div>
-            </AspectRatio>
-          </a>
+                
+                {/* Thumbnail image */}
+                <motion.img
+                  src={thumbnail}
+                  alt={`${title} thumbnail`}
+                  className="object-cover w-full h-full"
+                  animate={{ 
+                    scale: isHovering ? 1.05 : 1,
+                  }}
+                  transition={{ duration: 0.5 }}
+                />
+                
+                {/* Light beam effect on hover */}
+                <div className="absolute -inset-full h-[500%] w-[25%] bg-gradient-to-r from-transparent via-white/20 to-transparent -skew-x-12 transform-gpu hidden group-hover:block group-hover:animate-[shimmer_3s_ease-in-out_infinite]"></div>
+              </AspectRatio>
+            </a>
+          </div>
         </div>
         <CardTitle className="text-lg font-bold bg-gradient-to-br from-white to-gray-300 bg-clip-text text-transparent group-hover:from-purple-300 group-hover:to-blue-300 transition-all duration-300">{title}</CardTitle>
         <CardDescription className="text-gray-300 mt-1 text-sm font-medium">
